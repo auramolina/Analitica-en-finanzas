@@ -84,7 +84,7 @@ def sel_variables(modelos,X,y,threshold):
         var_names_ac=np.unique(var_names_ac)
     return var_names_ac
 
-var_names = sel_variables(modelos, x, dfy, threshold="2.2*mean")
+var_names = sel_variables(modelos, x, dfy, threshold="2*mean")
 var_names.shape
 
 # Variables elegidas incialmente con el threshold 2.2 
