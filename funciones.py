@@ -74,8 +74,6 @@ def sel_variables(modelos,X,y,threshold):
     
     return var_names_ac
 
-
-
 def medir_modelos(modelos,scoring,X,y,cv):
 
     metric_modelos=pd.DataFrame()
@@ -86,6 +84,7 @@ def medir_modelos(modelos,scoring,X,y,cv):
     
     metric_modelos.columns=["reg","decision_tree","random_forest","gradient_boosting"]
     return metric_modelos
+
 
 #La función se modifica para adaptarlo a nuestro programa 
 def preparar_datos (df):
